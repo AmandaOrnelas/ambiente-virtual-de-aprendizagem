@@ -1,0 +1,46 @@
+
+
+<%= form_for Usuario.new do |f| %> <!--Mesma coisa q um formulario normal, cria um action para a url usuarios -->
+	
+<div class="form-group">
+	<%= f.label :nome %> <!--Nome:-->
+	<%= f.text_field :nome, class: "form-control" %> 
+	<!--<input type="text" name="usuario[nome]"/> <br/> -->
+</div>
+
+
+<div class="form-group">
+	<%= f.label :login %> <!-- Login: --> 
+	<%= f.text_field :login, class: "form-control" %> 
+	<!-- <input type="text" name="usuario[login]"/><br/> -->
+</div>
+
+
+<div class="form-group">
+	<%= f.label :senha %><!--Senha:--> 
+	<%= f.password_field :senha, class: "form-control"  %> 
+	<!-- <input type="password" name="usuario[senha]"><br/> -->
+</div>
+
+
+<div class="form-group">
+	<%= f.label :nivel %>
+	<%= f.text_field :nivel, class: "form-control" %>  
+	<!-- <input type="text" name="usuario[nivel]"/><br/> -->
+</div>
+
+
+<div class="form-group">
+	<%= f.label :código %>
+	<%= f.text_field :codigo, class: "form-control" %> 
+	<!-- <input type="text" name="usuario[codigo]"/><br/> -->
+</div>
+
+
+
+	<%= f.submit "Cadastrar usuário", class: "btn btn-primary" %>
+	<!-- <button type="submit"> Cadastrar </button> -->
+
+
+<% end %>
+

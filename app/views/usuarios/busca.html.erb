@@ -1,0 +1,22 @@
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Nomes:</th>
+			<th>Login:</th>
+		</tr>
+	</thead>
+
+	<tbody>
+
+		<% @usuarios.each do |usuario| %>
+		<tr>
+			<td><%= usuario.nome %></td>
+			<td><%= usuario.login %></td>
+			<td>  
+			<%= button_to "Remover", usuario, method: :delete, class: "btn btn-danger", data: { confirm: "Tem certeza que deseja remover #{usuario.nome}?" } %>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

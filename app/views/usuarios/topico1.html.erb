@@ -1,0 +1,211 @@
+<!-- Add the stylesheet to the head -->
+<link rel="stylesheet" type="text/css" href="clippy.css" media="all">
+
+
+
+<!-- Add these scripts to  the bottom of the page -->
+<!-- jQuery 1.7+ -->
+<script src="jquery.1.7.min.js"></script>
+
+<!-- Clippy.js -->
+<script src="clippy.min.js"></script>
+
+<!-- Init script -->
+<script type="text/javascript">
+    clippy.load('Merlin', function(agent) {
+        // Do anything with the loaded agent
+        agent.show();
+        agent.animate();
+
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  closenext(){
+ $("#myModal .close").click()
+
+  }
+
+
+
+</script>
+<script>
+function formatatempo(segs) {
+//function por Augusto Claro
+//augustoclaro1@hotmail.com
+//www.seven3d.com.br
+min = 0;
+hr = 0;
+
+while(segs>=60) {
+if (segs >=60) {
+segs = segs-60;
+min = min+1;
+}
+}
+
+while(min>=60) {
+if (min >=60) {
+min = min-60;
+hr = hr+1;
+}
+}
+
+if (hr < 10) {hr = "0"+hr}
+if (min < 10) {min = "0"+min}
+if (segs < 10) {segs = "0"+segs}
+fin = hr+":"+min+":"+segs
+return fin;
+}
+var segundos = 0; //inicio do cronometro
+function conta() {
+segundos++;
+document.getElementById("counter").innerHTML = formatatempo(segundos);
+}
+
+function inicia(){
+interval = setInterval("conta();",1000);
+}
+
+function para(){
+clearInterval(interval);
+tagNome();
+}
+
+function zera(){
+clearInterval(interval);
+segundos = 0;
+document.getElementById("counter").innerHTML = formatatempo(segundos);
+} 
+
+function reinicia(){
+  clearInterval(interval);
+  segundos = 0;
+  document.getElementById("counter").innerHTML = formatatempo(segundos);
+  interval = setInterval("conta();",1000);
+}
+</script>
+
+
+<script type="text/javascript">
+  
+function tagNome() {
+ x = document.getElementById(cronometro.id);
+ y = x.innerHTML;
+
+ z = y.replace('<span id="counter">', '')
+ time = z.replace('</span>', '')
+ alert(time);
+ $("#tempo").val(time);
+
+
+}
+
+</script>
+
+<center>
+    
+  <h1> Tópico 1
+
+  <br><br>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="inicia()">
+    Classes
+  </button>
+
+  <br><br>
+
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3" onclick="inicia()">
+    Objeto
+  </button>
+
+  <br><br>
+
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4" onclick="inicia()">
+    Polimorfismo
+  </button>
+
+</center>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> BOTÃO FECHAR COM X -->
+        <h4 class="modal-title" id="myModalLabel">Classe</h4>
+      </div>
+      <div class="modal-body">
+
+      Uma classe descreve que propriedades (ou atributos) um objeto terá e qual o comportamento dos Objetos da classe (são os chamados métodos). Um método é um equivalente a um procedimento ou uma função, porém manipula apenas suas variáveis locais e atributos definidos para a classe. A especificação de uma classe é composta de nome da classe, conjunto de atributos e conjunto de métodos.
+      <br>
+      <center><img alt="Logo" src="/assets/classe.png" />
+        <br>
+     
+      
+      </center>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-prev">Prev</button>
+        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal2" onclick="closenext()" data-dismiss="modal">Next</button>
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button> -->
+        <%= form_tag teste_usuario_path, method: :get do %>
+
+
+         <%= label_tag :tempo, class: "form-control", id: "cronometro" do %>
+           <span id="counter">00:00:00</span>
+         <% end %>
+
+
+         <!-- <%= text_field_tag :tempo, @tempo, class: "form-control" %> -->
+
+         <%= button_to "Fechar", nil, class: "btn btn-default", "data-dismiss": "modal", "onclick":"para()" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg"">
+    <div class="modal-content">
+      <div class="modal-header">
+       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> BOTÃO FECHAR X -->
+        <h4 class="modal-title" id="myModalLabel">Título do modal</h4>
+      </div>
+      <div class="modal-body">
+      <center>TesteEEEEEEEEEEEEEEEEEEEEEEE <br> 
+      
+      </center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

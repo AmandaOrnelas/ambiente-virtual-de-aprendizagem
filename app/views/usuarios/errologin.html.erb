@@ -1,0 +1,25 @@
+
+<%= link_to "Voltar", login_usuario_path %>
+<br><br>
+
+
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Nomes:</th>
+			<th>Login:</th>
+		</tr>
+	</thead>
+
+	<tbody>
+
+		<% @usuarios do |usuario| %>
+		<tr>
+			<td><%= usuario.nome %></td>
+			<td><%= usuario.login %></td>
+			
+		</tr>
+		<% end %>
+	</tbody>
+</table>

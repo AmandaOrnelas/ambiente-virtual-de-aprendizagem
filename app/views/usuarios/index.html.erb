@@ -1,0 +1,65 @@
+
+
+
+
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Nomes:</th>
+		</tr>
+	</thead>
+
+	<tbody>
+
+		<% @usuarios.each do |usuario| %>
+		<tr>
+			<td><%= usuario.nome %></td>
+			<td><%= usuario.login %></td>
+			<td>  
+			<!-- <%= link_to "Remover", "/usuarios/#{usuario.id}/remove" %></td>   <a href="/usuarios/<%= usuario.id %>/remove">Remover </a>  POSSO RESUMIR ISSO TUDO: O proprio rails cria a url, basta eu indicar o metodo e o objeto: --> 
+			<!-- <%= link_to "Remover", usuario, method: :delete %> o google pode seguir o link, por isso meçlhor usar button --> 
+			<%= button_to "Remover", usuario, method: :delete, class: "btn btn-danger", data: { confirm: "Tem certeza que deseja remover #{usuario.nome}?" } %>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+
+
+</table>
+
+<%= link_to "Cadastrar novo usuario", new_usuario_path %> <!-- usuarios_new_path  CAMINHO Q ERA USADO QUANDO TINHA AQUELE CODIGÃO NO ROUTES --><!-- Posso usar principal_new_url.. vai mostrar o caminho inteiro, contendo o localhost/3000 -->
+<br>
+
+
+
+<!--
+<center>
+	
+<h1>Login</h1>
+<h2>Entrar no Sistema:</h2> </br>
+<form>
+<table width="200" border="0" cellspacing="0" cellpadding="0" align="center">
+
+	<tr>
+		<td>Login</td>
+		<td><input type="text" name="login"></td>
+	</tr>
+	<br>
+	<tr>
+		<td></td>
+		<td><input type="password" name="senha"></ins></td>
+	</tr>
+	
+
+	<tr>
+		<td></td>
+		<td><input type="submit" value="Entrar"></td>
+	</tr>
+
+</table>
+
+
+</center>	
+	-->
+

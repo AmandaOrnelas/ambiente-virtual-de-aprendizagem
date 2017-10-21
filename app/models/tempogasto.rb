@@ -1,0 +1,2 @@
+class Tempogasto < ApplicationRecord
+end
