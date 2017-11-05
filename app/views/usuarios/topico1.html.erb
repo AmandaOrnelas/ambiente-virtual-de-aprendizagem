@@ -122,19 +122,26 @@ function tagNome() {
   <br><br>
 
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onclick="inicia()">
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalClasse1" onclick="inicia()">
     Classes
   </button>
 
   <br><br>
 
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3" onclick="inicia()">
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalObjeto1" onclick="inicia()">
     Objeto
   </button>
 
   <br><br>
 
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4" onclick="inicia()">
+
+  <br><br>
+
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalHeranca1" onclick="inicia()">
+    Herança
+  </button>
+
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalPolimorfismo1" onclick="inicia()">
     Polimorfismo
   </button>
 
@@ -142,7 +149,7 @@ function tagNome() {
 
 
 <!-- Modal Classe Page 1-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+<div class="modal fade" id="myModalClasse1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -151,14 +158,14 @@ function tagNome() {
       </div>
       <div class="modal-body">
 
-      <h3>
+      <h4>
         <b>Classe:</b> descreve que propriedades (ou <b>atributos</b>) um objeto terá e qual o comportamento dos Objetos da classe (são os chamados <b>métodos</b>).
         <br>
         <b>Especificação de uma classe:</b> é composta de <u>nome da classe</u>, <u>conjunto de atributos</u> e <u>conjunto de métodos</u>.
         <br>
         <b>Nome da classe:</b> é um identificador para a classe, que possibilita referenciá-la posteriormente.
         <b>EX:</b> pode referenciá-la no momento da criação de um objeto
-      </h3>
+      </h4>
 
       <br>
       <center>
@@ -195,7 +202,7 @@ function tagNome() {
 
 
 <!-- Modal Classe Page 2-->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModalClasse2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg"">
     <div class="modal-content">
       <div class="modal-header">
@@ -205,7 +212,7 @@ function tagNome() {
       <div class="modal-body">
       
       
-        <h3>
+        <h4>
 
         <b>Conjunto de atributos:</b> Descreve as propriedade da classe. Cada atributo possui um nome e um tipo associado. Pode ter também um valor_default opcional.
         <br>
@@ -215,7 +222,7 @@ function tagNome() {
           <br><br>
         <b>Conjunto de métodos:</b> Definem as funcionalidades da classe, isto é, define o que será possível fazer com os objetos dessa classe. É um equivalente a um procedimento ou uma função, porém manipula apenas suas variáveis locais e atributos definidos para a classe. Cada método é especificado por uma assinatura, composta por um <u>identificador</u> para o método (<u>nome</u> do método), o <u>tipo</u> para o <u>valor</u> de retorno e sua lista de argumentos, sendo cada argumento identificado por seu tipo e nome.
 
-        </h3>
+        </h4>
       
       
       </div>
@@ -233,7 +240,7 @@ function tagNome() {
 
 
 <!-- Modal Classe Page 3-->
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModalClasse3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg"">
     <div class="modal-content">
       <div class="modal-header">
@@ -243,11 +250,11 @@ function tagNome() {
       <div class="modal-body">
       
 
-      <h3>
+      <h4>
         <b>Mecanismo de sobrecarga (overloading):</b>  através desse mecanismo dois métodos de uma mesma classe podem ter o mesmo nome, contanto que tenham assinaturas diferentes, ou seja, com argumentos diferentes. Nesse caso não há conflito, pois o compilador é capaz de detectar qual método deve ser escolhido com base nos tipos dos argumentos de cada método. A escolha do método correto é chamada de <u>ligação prematura (early binding)</u>.
 
 
-      </h3>
+      </h4>
 
 
       
@@ -266,7 +273,7 @@ function tagNome() {
 
 
 <!-- Modal Classe Page 4-->
-<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModalClasse4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg"">
     <div class="modal-content">
       <div class="modal-header">
@@ -275,7 +282,7 @@ function tagNome() {
       </div>
       <div class="modal-body">
       
-      <h3>
+      <h4>
         
         <b>Visibilidade:</b> Pode ser para métodos e atributos. <br>
         Três categorias de visibilidade podem ser definidas: <br>
@@ -283,7 +290,117 @@ function tagNome() {
         <b>Privado:</b> O atributo ou método de um objeto pertencente a essa classe não pode ser acessado por nenhum outro objeto (nenhuma visibilidade externa). Simbolizado em UML por -. <br>
         <b>Protegido:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado apenas por objetos de classes que tenham herança dessa classe, ou seja, pode ser acessado apenas por objetos de classes derivadas dessa classe.
 
-      </h3>
+      </h4>
+      
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-----------------------------------------------------MODAL OBJETO ABAIXO----------------------------------------------->
+
+
+<!-- Modal Objeto Page 1-->
+<div class="modal fade" id="myModalObjeto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg"">
+    <div class="modal-content">
+      <div class="modal-header">
+       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> BOTÃO FECHAR X -->
+        <h4 class="modal-title" id="myModalLabel">Classe</h4>
+      </div>
+      <div class="modal-body">
+      
+      <h4>
+        
+        <b>Objetos:</b> São instâncias de classes. Em um sistema implementado em linguagens orientadas a objetos, basicamente todo o processamento ocorre através de objetos. <br>
+
+        <center>Diagrama 1</center>
+        
+
+        Em linguagens de programação orientadas a objetos, tudo pode ser potencialmente representado como um objeto. Sob o ponto de vista desse paradigma, um objeto é similar a uma variável normal.<br>
+        <b>EX:</b> Uma variável do tipo int definida em uma linguagem de programação como C ou Java possui: espaço em memória para armazenar seu estado (valor) e um conjunto de operações que podem ser aplicadas por meio dos operadores para valores inteiros definidos pela linguagem. <br>
+        Da mesma maneira: um objeto criado possui um espaço em memória para armazenar seu estado (valores dos seus atributos) e um conjunto de operações aplicáveis a esse objeto (métodos definidos pela classe).
+
+
+      </h4>
+      
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal Objeto Page 2-->
+<div class="modal fade" id="myModalObjeto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg"">
+    <div class="modal-content">
+      <div class="modal-header">
+       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> BOTÃO FECHAR X -->
+        <h4 class="modal-title" id="myModalLabel">Classe</h4>
+      </div>
+      <div class="modal-body">
+      
+      <h4>
+        
+        
+
+       Um programa orientado a objetos possui um conjunto de objetos que interagem por meio de “trocas de mensagens”, ou seja, através da aplicação de métodos a objetos.<br>
+      <u>Recomendação:</u> Estrutura de um objeto e implementação dos seus métodos privados.<br>
+      <b>Encapsulação:</b> é o princípio de projeto pelo qual cada componente de um programa deve agregar toda a informação relevante para sua manipulação como uma unidade (uma cápsula). É um mecanismo poderoso quando aliado ao conceito de <u>ocultamento de informação</u>. <br>
+      <b>Ocultamento de informação:</b> princípio onde cada componente deve manter oculta sob sua guarda uma decisão de projeto única. Para a utilização desse componente, apenas o mínimo necessário para sua operação deve ser revelado (tornado público). <br>
+      <u>Recomendação:</u> o uso da encapsulação e ocultamento de informação, que representa o estado de um objeto, deve ser mantida oculta.
+
+
+      </h4>
+      
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal Objeto Page 3-->
+<div class="modal fade" id="myModalObjeto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg"">
+    <div class="modal-content">
+      <div class="modal-header">
+       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> BOTÃO FECHAR X -->
+        <h4 class="modal-title" id="myModalLabel">Classe</h4>
+      </div>
+      <div class="modal-body">
+      
+      <h4>
+        
+        
+
+     <b>Interface operacional:</b> conjunto de assinaturas dos métodos públicos. <br>
+
+      Apenas a assinatura dos métodos é revelada, desssa maneira, detalhes internos sobre a operação do objeto não são conhecidos. Assim, o usuário do objeto pode trabalhar em níveis mais altos de abstração, sem se preocupar com detalhes internos da classe. Tal fator possibilita a simplificação de programas com funcionalidades complexas.
+
+
+      </h4>
       
       
       </div>
