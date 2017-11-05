@@ -168,7 +168,7 @@ function tagNome() {
 
       <br>
       <center>
-      <%=image_tag("classe.png", alt: "Logo", width: "350px")%>
+      <%=image_tag("classe.png", alt: "Logo", width: "400px")%>
 
      <!-- <img alt="Logo" src="app/assets/images/classe.png" /> -->
         <br>
@@ -213,13 +213,16 @@ function tagNome() {
       
         <h4>
 
-        <b>Conjunto de atributos:</b> Descreve as propriedade da classe. Cada atributo possui um nome e um tipo associado. Pode ter também um valor_default opcional.
-        <br>
+        <b>Conjunto de atributos:</b> Descreve as propriedade da classe. Cada atributo possui um nome e um tipo associado. Pode ter também um <u>valor_default opcional</u>.
+        <br><br>
           <b>Tipo:</b> Pode ser o nome de uma classe (nas lingiagens de programação orientadas a obejetos pura). Ou do grupo de tipos primitivos das lingagens de POO como inteiro, real, caracter.
-          <br>
-          <b>Valor_default opcional:</b> especifica um valor inicial para o atributo.
           <br><br>
-        <b>Conjunto de métodos:</b> Definem as funcionalidades da classe, isto é, define o que será possível fazer com os objetos dessa classe. É um equivalente a um procedimento ou uma função, porém manipula apenas suas variáveis locais e atributos definidos para a classe. Cada método é especificado por uma assinatura, composta por um <u>identificador</u> para o método (<u>nome</u> do método), o <u>tipo</u> para o <u>valor</u> de retorno e sua lista de argumentos, sendo cada argumento identificado por seu tipo e nome.
+          <b>Valor_default opcional:</b> especifica um valor inicial para o atributo.
+          <br><br><br>
+        <b>Conjunto de métodos:</b> Definem as funcionalidades da classe, isto é, define o que será possível fazer com os objetos dessa classe. É um equivalente a um procedimento ou uma função, porém manipula apenas suas variáveis locais e atributos definidos para a classe. Cada método é especificado por uma assinatura, composta por um <u>identificador</u> para o método (<u>nome</u> do método), o <u>tipo</u> para o <u>valor</u> de retorno e sua lista de argumentos, sendo cada argumento identificado por seu tipo e nome. <br> <br>
+
+         <%=image_tag("classepessoa.png", alt: "Logo", width: "500px")%>
+
 
         </h4>
       
@@ -249,8 +252,10 @@ function tagNome() {
       <div class="modal-body">
       
 
-      <h4>
-        <b>Mecanismo de sobrecarga (overloading):</b>  através desse mecanismo dois métodos de uma mesma classe podem ter o mesmo nome, contanto que tenham assinaturas diferentes, ou seja, com argumentos diferentes. Nesse caso não há conflito, pois o compilador é capaz de detectar qual método deve ser escolhido com base nos tipos dos argumentos de cada método. A escolha do método correto é chamada de <u>ligação prematura (early binding)</u>.
+      <h4> <br><br>
+        <b>Mecanismo de sobrecarga (overloading):</b>  através desse mecanismo dois métodos de uma mesma classe podem ter o mesmo nome, contanto que tenham assinaturas diferentes, ou seja, com argumentos diferentes. Nesse caso não há conflito, pois o compilador é capaz de detectar qual método deve ser escolhido com base nos tipos dos argumentos de cada método. A escolha do método correto é chamada de <u>ligação prematura (early binding)</u>. <br><br>
+
+         <%=image_tag("sobrecarga.png", alt: "Logo", width: "600px")%>
 
 
       </h4>
@@ -287,7 +292,9 @@ function tagNome() {
         Três categorias de visibilidade podem ser definidas: <br>
         <b>Público:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado por qualquer outro objeto (visibilidade externa total). Simbolizado em UML por +. <br>
         <b>Privado:</b> O atributo ou método de um objeto pertencente a essa classe não pode ser acessado por nenhum outro objeto (nenhuma visibilidade externa). Simbolizado em UML por -. <br>
-        <b>Protegido:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado apenas por objetos de classes que tenham herança dessa classe, ou seja, pode ser acessado apenas por objetos de classes derivadas dessa classe.
+        <b>Protegido:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado apenas por objetos de classes que tenham herança dessa classe, ou seja, pode ser acessado apenas por objetos de classes derivadas dessa classe. Simbolizado em UML por #. <br> <br>
+
+        <%=image_tag("simbolosvisibilidade.png", alt: "Logo", width: "550px")%>
 
       </h4>
       
@@ -460,7 +467,7 @@ function tagNome() {
 
 
 <!-- Modal Herança Page 2-->
-<div class="modal fade" id="myModalHeranca1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModalHeranca2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg"">
     <div class="modal-content">
       <div class="modal-header">
@@ -483,8 +490,8 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev">Prev</button>
-        <button type="button" class="btn btn-default btn-next"  data-toggle="modal" data-target="#myModalHeranca2" data-dismiss="modal">Next</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalHeranca1" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
     </div>
