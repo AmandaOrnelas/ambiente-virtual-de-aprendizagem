@@ -134,12 +134,11 @@ function tagNome() {
 
   <br><br>
 
-
-  <br><br>
-
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalHeranca1" onclick="inicia()">
     Herança
   </button>
+
+   <br><br>
 
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalPolimorfismo1" onclick="inicia()">
     Polimorfismo
@@ -169,7 +168,7 @@ function tagNome() {
 
       <br>
       <center>
-      <%=image_tag("classe.png", alt: "Logo")%>
+      <%=image_tag("classe.png", alt: "Logo", width: "50px")%>
 
      <!-- <img alt="Logo" src="app/assets/images/classe.png" /> -->
         <br>
@@ -180,7 +179,7 @@ function tagNome() {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default btn-prev">Prev</button>
-        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal2" onclick="closenext()" data-dismiss="modal">Next</button>
+        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModalClasse2" onclick="closenext()" data-dismiss="modal">Next</button>
         <!-- <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button> -->
         <%= form_tag teste_usuario_path, method: :get do %>
 
@@ -227,8 +226,8 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal" data-dismiss="modal">Prev</button>
-        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Next</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalClasse1" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModalClasse3" data-dismiss="modal">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
     </div>
@@ -261,8 +260,8 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Prev</button>
-        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Next</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalClasse2" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModalClasse4" data-dismiss="modal">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
     </div>
@@ -295,7 +294,7 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalClasse3" data-dismiss="modal">Prev</button>
         <button type="button" class="btn btn-default btn-next">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
@@ -334,8 +333,8 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
-        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default btn-prev">Prev</button>
+        <button type="button" class="btn btn-default btn-next"  data-toggle="modal" data-target="#myModalObjeto2" data-dismiss="modal">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
     </div>
@@ -371,8 +370,8 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
-        <button type="button" class="btn btn-default btn-next">Next</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalObjeto1" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModalObjeto3" data-dismiss="modal">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
     </div>
@@ -405,7 +404,7 @@ function tagNome() {
       
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Prev</button>
+        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModalObjeto2" data-dismiss="modal">Prev</button>
         <button type="button" class="btn btn-default btn-next">Next</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="para()">Fechar</button>
       </div>
