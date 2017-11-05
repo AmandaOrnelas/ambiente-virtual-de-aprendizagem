@@ -157,6 +157,7 @@ function tagNome() {
       </div>
       <div class="modal-body">
 
+      <div align="justify"> 
       <h4>
         <b>Classe:</b> descreve que propriedades (ou <b>atributos</b>) um objeto terá e qual o comportamento dos Objetos da classe (são os chamados <b>métodos</b>).
         <br>
@@ -165,6 +166,7 @@ function tagNome() {
         <b>Nome da classe:</b> é um identificador para a classe, que possibilita referenciá-la posteriormente.
         <b>EX:</b> pode referenciá-la no momento da criação de um objeto
       </h4>
+      </div>
 
       <br>
       <center>
@@ -213,6 +215,7 @@ function tagNome() {
       
         <h4>
 
+        <div align="justify"> 
         <b>Conjunto de atributos:</b> Descreve as propriedade da classe. Cada atributo possui um nome e um tipo associado. Pode ter também um <u>valor_default opcional</u>.
         <br><br>
           <b>Tipo:</b> Pode ser o nome de uma classe (nas lingiagens de programação orientadas a obejetos pura). Ou do grupo de tipos primitivos das lingagens de POO como inteiro, real, caracter.
@@ -220,6 +223,7 @@ function tagNome() {
           <b>Valor_default opcional:</b> especifica um valor inicial para o atributo.
           <br><br>
         <b>Conjunto de métodos:</b> Definem as funcionalidades da classe, isto é, define o que será possível fazer com os objetos dessa classe. É um equivalente a um procedimento ou uma função, porém manipula apenas suas variáveis locais e atributos definidos para a classe. Cada método é especificado por uma assinatura, composta por um <u>identificador</u> para o método (<u>nome</u> do método), o <u>tipo</u> para o <u>valor</u> de retorno e sua lista de argumentos, sendo cada argumento identificado por seu tipo e nome. <br> <br>
+        </div>
 
          <center><%=image_tag("classepessoa.png", alt: "Logo", width: "400px")%></center>
 
@@ -253,7 +257,9 @@ function tagNome() {
       
 
       <h4> 
+        <div align="justify"> 
         <b>Mecanismo de sobrecarga (overloading):</b>  através desse mecanismo dois métodos de uma mesma classe podem ter o mesmo nome, contanto que tenham assinaturas diferentes, ou seja, com argumentos diferentes. Nesse caso não há conflito, pois o compilador é capaz de detectar qual método deve ser escolhido com base nos tipos dos argumentos de cada método. A escolha do método correto é chamada de <u>ligação prematura (early binding)</u>. <br><br>
+        </div>
 
          <center><%=image_tag("sobrecarga.png", alt: "Logo", width: "500px")%></center>
 
@@ -287,13 +293,14 @@ function tagNome() {
       <div class="modal-body">
       
       <h4>
-        
+
+        <div align="justify"> 
         <b>Visibilidade:</b> Pode ser para métodos e atributos. <br>
         Três categorias de visibilidade podem ser definidas: <br>
         <b>Público:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado por qualquer outro objeto (visibilidade externa total). Simbolizado em UML por +. <br>
         <b>Privado:</b> O atributo ou método de um objeto pertencente a essa classe não pode ser acessado por nenhum outro objeto (nenhuma visibilidade externa). Simbolizado em UML por -. <br>
         <b>Protegido:</b> O atributo ou método de um objeto pertencente a essa classe pode ser acessado apenas por objetos de classes que tenham herança dessa classe, ou seja, pode ser acessado apenas por objetos de classes derivadas dessa classe. Simbolizado em UML por #. <br> <br><br>
-
+        </div>
         <center><%=image_tag("simbolosvisibilidade.png", alt: "Logo", width: "500px")%></center>
 
       </h4>
@@ -324,16 +331,17 @@ function tagNome() {
       <div class="modal-body">
       
       <h4>
-        
+        <div align="justify"> 
         <b>Objetos:</b> São instâncias de classes. Em um sistema implementado em linguagens orientadas a objetos, basicamente todo o processamento ocorre através de objetos. <br>
+        </div>
 
         <center><%=image_tag("representacaoobjeto.png", alt: "Logo", width: "500px")%></center>
         
-
+        <div align="justify"> 
         Em linguagens de programação orientadas a objetos, tudo pode ser potencialmente representado como um objeto. Sob o ponto de vista desse paradigma, um objeto é similar a uma variável normal.<br>
         <b>EX:</b> Uma variável do tipo int definida em uma linguagem de programação como C ou Java possui: espaço em memória para armazenar seu estado (valor) e um conjunto de operações que podem ser aplicadas por meio dos operadores para valores inteiros definidos pela linguagem. <br>
         Da mesma maneira: um objeto criado possui um espaço em memória para armazenar seu estado (valores dos seus atributos) e um conjunto de operações aplicáveis a esse objeto (métodos definidos pela classe).
-
+        </div>
 
       </h4>
       
@@ -364,13 +372,13 @@ function tagNome() {
       <h4>
         
         
-
+        <div align="justify"> 
        Um programa orientado a objetos possui um conjunto de objetos que interagem por meio de “trocas de mensagens”, ou seja, através da aplicação de métodos a objetos.<br><br>
       <u>Recomendação:</u> Estrutura de um objeto e implementação dos seus métodos privados.<br><br>
       <b>Encapsulação:</b> é o princípio de projeto pelo qual cada componente de um programa deve agregar toda a informação relevante para sua manipulação como uma unidade (uma cápsula). É um mecanismo poderoso quando aliado ao conceito de <u>ocultamento de informação</u>. <br><br>
       <b>Ocultamento de informação:</b> princípio onde cada componente deve manter oculta sob sua guarda uma decisão de projeto única. Para a utilização desse componente, apenas o mínimo necessário para sua operação deve ser revelado (tornado público). <br><br>
       <u>Recomendação:</u> o uso da encapsulação e ocultamento de informação, que representa o estado de um objeto, deve ser mantida oculta.
-
+      </div>
 
       </h4>
       
@@ -400,12 +408,12 @@ function tagNome() {
       <h4>
         
         
-
+      <div align="justify"> 
      <b>Interface operacional:</b> conjunto de assinaturas dos métodos públicos. <br>
 
       Apenas a assinatura dos métodos é revelada, desssa maneira, detalhes internos sobre a operação do objeto não são conhecidos. Assim, o usuário do objeto pode trabalhar em níveis mais altos de abstração, sem se preocupar com detalhes internos da classe. Tal fator possibilita a simplificação de programas com funcionalidades complexas.
       <br><br><br><br><br><br><br><br><br><br><br><br>
-
+      </div>
       </h4>
       
       
@@ -440,14 +448,14 @@ function tagNome() {
       
       <h4>
         
-        
+        <div align="justify"> 
         <b>Herança:</b>  Mecanismo que possibilita que as características em comum a várias classes possam ser unidas e separadas em uma classe base, a superclasse. Assim, a partir da classe base, define-se as classes mais específicas.
         As subclasses (classes mais específicas) possuem características (atributos e métodos) da classe base acrescidos as suas características particulares.<br><br>
         <b>Formas de relacionamentos em herança:</b><br>
         <b>Extensão:</b> A superclasse permanece inalterada, enquanto a subclasse estende a superclasse. Também referenciado como <u>herança estrita</u>.<br>
         <b>Especificação:</b> A superclasse não implementa nenhuma funcionalidade, ela apenas especifica o que a subclasse deve oferecer. Apenas a interface da superclasse é herdada pela sbclasse, isto é, apenas o conjunto de especificação dos métodos públicos.<br>
         <b>Combinação de extensão e especificação: </b> A subclasse herda a interface e uma implementação padrão de métodos da superclasse. A subclasse pode redefinir métodos da superclasse para especializá-los ou oferencer a implementação de um método apenas declarado pela superclasse. Esse comportamento pode ser denominado <u>herança polimórfica</u>.
-
+        </div>
 
 
       </h4>
@@ -478,11 +486,11 @@ function tagNome() {
       
       <h4>
         
-        
+        <div align="justify"> 
        Algumas linguagens possuem tamém outra forma de relacionamento:<br><br>
       <u>Contração:</u> A subclasse elimina métodos da superclasse com o objetivo de criar uma “classe mais simples”. Para realizar a eliminação, ocorre a redefinição de métodos com o corpo vazio. Porém esse mecanismo viola os princípios da substituição, pois uma subclasse não poderá ser utilizada em todos os pontos onde a superclasse puder ser utilizada. Esse mecanismo deve ser evitado, se for detectada sua necessidade, o melhor a fazer é reanalizar a hierarquia de classes e detectar as inconsisências.
       <br><br><br><br><br><br><br><br><br><br>
-
+      </div>
 
 
 
@@ -500,7 +508,7 @@ function tagNome() {
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br>
+<br>
 
 <div style="text-align: right;"> 
 Material utilizado:<br>
