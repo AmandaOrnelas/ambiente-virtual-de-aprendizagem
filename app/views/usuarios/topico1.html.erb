@@ -404,7 +404,7 @@ function tagNome() {
      <b>Interface operacional:</b> conjunto de assinaturas dos métodos públicos. <br>
 
       Apenas a assinatura dos métodos é revelada, desssa maneira, detalhes internos sobre a operação do objeto não são conhecidos. Assim, o usuário do objeto pode trabalhar em níveis mais altos de abstração, sem se preocupar com detalhes internos da classe. Tal fator possibilita a simplificação de programas com funcionalidades complexas.
-      <br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
 
       </h4>
       
@@ -442,11 +442,11 @@ function tagNome() {
         
         
         <b>Herança:</b>  Mecanismo que possibilita que as características em comum a várias classes possam ser unidas e separadas em uma classe base, a superclasse. Assim, a partir da classe base, define-se as classes mais específicas.
-        As subclasses (classes mais específicas) possuem características (atributos e métodos) da classe base acrescidos as suas características particulares.<br>
+        As subclasses (classes mais específicas) possuem características (atributos e métodos) da classe base acrescidos as suas características particulares.<br><br>
         <b>Formas de relacionamentos em herança:</b><br>
-        <u>Extensão:</u> A superclasse permanece inalterada, enquanto a subclasse estende a superclasse. Também referenciado como <u>herança estrita</u>.<br>
-        Especificação: A superclasse não implementa nenhuma funcionalidade, ela apenas especifica o que a subclasse deve oferecer. Apenas a interface da superclasse é herdada pela sbclasse, isto é, apenas o conjunto de especificação dos métodos públicos.<br>
-        <u>Combinação de extensão e especificação: </u> A subclasse herda a interface e uma implementação padrão de métodos da superclasse. A subclasse pode redefinir métodos da superclasse para especializá-los ou oferencer a implementação de um método apenas declarado pela superclasse. Esse comportamento pode ser denominado <u>herança polimórfica</u>.
+        <b>Extensão:</b> A superclasse permanece inalterada, enquanto a subclasse estende a superclasse. Também referenciado como <u>herança estrita</u>.<br>
+        <b>Especificação:</b> A superclasse não implementa nenhuma funcionalidade, ela apenas especifica o que a subclasse deve oferecer. Apenas a interface da superclasse é herdada pela sbclasse, isto é, apenas o conjunto de especificação dos métodos públicos.<br>
+        <b>Combinação de extensão e especificação: </b> A subclasse herda a interface e uma implementação padrão de métodos da superclasse. A subclasse pode redefinir métodos da superclasse para especializá-los ou oferencer a implementação de um método apenas declarado pela superclasse. Esse comportamento pode ser denominado <u>herança polimórfica</u>.
 
 
 
@@ -481,6 +481,7 @@ function tagNome() {
         
        Algumas linguagens possuem tamém outra forma de relacionamento:<br><br>
       <u>Contração:</u> A subclasse elimina métodos da superclasse com o objetivo de criar uma “classe mais simples”. Para realizar a eliminação, ocorre a redefinição de métodos com o corpo vazio. Porém esse mecanismo viola os princípios da substituição, pois uma subclasse não poderá ser utilizada em todos os pontos onde a superclasse puder ser utilizada. Esse mecanismo deve ser evitado, se for detectada sua necessidade, o melhor a fazer é reanalizar a hierarquia de classes e detectar as inconsisências.
+      <br><br><br><br><br><br><br><br>
 
 
 
